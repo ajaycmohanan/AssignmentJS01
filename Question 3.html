@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script>
+        //Declare array
+        var array = [120, 49, 1000, 1304, 30, 23, 39];
+
+        //Function to find whether a number is even or not.
+        var even = function (n) {
+            return n % 2 ===0;
+        };
+
+        //Function to find the largest number from an array
+
+        var EvenArray = array.filter(even), max=-Infinity;
+        EvenArray.filter(
+            function(a,b,c) {
+                if(a>max)max=a;
+            }
+        );
+
+        console.log("Number of even numbers is " + EvenArray.length);
+        console.log("Largest even number is " + max);
+    </script>
+</head>
+<body>
+    With help of filter method, write a JavaScript program: <br>
+a) To find the number of even digits in an array of integers. <br>
+b) To get the largest even number from an array of integers. 
+</body>
+</html>
